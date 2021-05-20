@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/706ee30aef.js" crossorigin="anonymous"></script>
+
+    <title>donate_volunteer</title>
+</head>
+<body>
+    <header class="header"> 
+        
+        <h1 style="font-weight: bolder;"><a href="index.html">
+            <i class="fas fa-paw"></i>Wildlife Sanctuary</a></h1>
+        <nav class="navbar">
+            <div class="header__links">
+                <a href="index.html">Home</a>
+                <a href="residents.html">Residents</a>
+                <a href="our_team.html">Our Team</a>
+                <a href="contacts.html">Contacts</a>
+                <a href="donate_volunteer.html">Donate/Volunteer</a>
+            </div>
+        </nav>
+    </header>
+<body>
+    <h1>Make a Gift</h1>
+    <div class="red-panda">
+        <img id="red-panda" src="/images/red_panda.jpg" style="padding-left: 20px;">
+    </div>
+    <h2>We appreciate your generosity! (But don't put your actual personal information in this form.)</h2>
+    <!-- Donation Form -->
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST">
+        <fieldset>
+            <legend style="font-weight: bolder;">Fill out your information to donate</legend>
+            <p>
+            <label>First Name:
+                <input type="text" name="FirstName_input" maxlength="30">
+            </label>
+            </p>
+            <p>
+            <label>Last Name:
+                <input type="text" name="lastName_input" maxlength="30">
+            </label>
+            </p>
+            <p>
+            <label>Email Address:
+                <input type="email" name="email" maxlength="30">
+            </label>
+            </p>
+            <p>
+            <label>Address line 1:
+                <input type="text" name="address1" maxlength="50">
+            </label>
+            </p>
+            <p>
+                <label>Address line 2:
+                    <input type="text" name="address2" maxlength="50">
+                </label>
+            </p>
+            <p>
+                <label>City:
+                    <input type="text" name="city" maxlength="50">
+                </label>
+            </p>
+            <p>
+                <label>State/Province:
+                    <input type="text" name="state" maxlength="50">
+                </label>
+            </p>
+            <p>
+                <label>Postal Code:
+                    <input type="text" name="postalCode" maxlength="50">
+                </label>
+            </p>
+            <p>
+                <label>Country:
+                    <input type="text" name="country" maxlength="50">
+                </label>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend style="font-weight: bolder;">Payment Information</legend>
+            <p>
+                <label>Card Number:
+                    <input type="text" name="credit-card" maxlength="20">
+                </label>
+                <label>CVV:
+                    <input type="text" name="cvv">
+                </label>
+            </p>
+            <p>
+                <label>Expiration Date:
+                    <input type="month" name="month">
+                </label>
+            </p>
+            <p>
+                <input type="submit" value="Submit" style="font-size: large;">
+            </p>
+        </fieldset>
+    </form>
+    <br>
+    <!-- Volunteer Form -->
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST">
+        <fieldset>
+            <legend style="font-weight: bolder;">Fill out your information to volunteer</legend>
+            <p>
+                <label>Name:
+                <input type="text" name="volunteerName">
+                </label>
+            </p>
+            <p>
+                <label>Phone Number:
+                <input type="text" name="phoneNum">
+                </label>
+            </p>
+            <p>
+                <label>Enter your availability start-time:
+                    <input type="datetime-local" name="start-time">
+                </label>
+            </p>
+            <p>
+                <label>Enter your availability end-time:
+                    <input type="datetime-local" name="end-time">
+                </label>
+            </p>
+            <p>
+                <label>Comments:<br>
+                    <textarea type="text" rows="5" cols="30"></textarea>
+                </label>
+            </p>
+            <p>
+                <input type="submit" value="Submit" style="font-size: large;">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,115 @@
+html {
+    font-size: 100%; /* Lets user control zoom. */
+}
+
+/* Font for the entire document unless over-written later. */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    background-color: darkolivegreen;
+    /* background-image: url(/images/background.jpg); */
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+    /* opacity: 0.6; */
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* This gets rid of link's underlines.  */
+a, a:visited {
+    text-decoration: none;
+    padding-right: 5px;
+    color: black;
+    background-color: transparent;
+    /* float: right; */
+}
+
+a:hover {
+    background-color: lightgray;
+}
+
+/* Display is flex so that the entire header section stays in one line. */
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: darkolivegreen;
+    /* opacity: 0.6; */
+
+}
+
+.header__links {
+    display: inline-block;
+    margin-left: 700px;   /*Stick it to the right side. */
+    margin-right: 0px; 
+}
+
+#slideShowContainer {
+    /* text-align: center; */
+    position: relative;
+    display: block; 
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* width: 90%; */
+    /* margin-top: 200px;
+    padding-left: 600px;
+    padding-right: 600px; */
+}
+
+img {
+    position: inherit;
+    width: 100%;
+    height: 87%;
+    border-radius: 10px;
+}
+
+.mySlides {
+    display: none;
+    height: 1000px;
+    width: 100%;
+    /* border: solid 1px black; */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: 90px;
+    padding-left: 10px;
+    padding-right: px;
+    padding-bottom: 10px;
+    transition: 0.5s ease;
+    border-radius: 0px 0px 0px 0px;
+    /* background-color: wheat; */
+    font-weight: bold;
+    font-size: xxx-large;
+}
+
+.prev {
+    left: 500px;
+}
+
+.next {
+    right: 500px;
+}
+
+.prev:hover, .next:hover {
+    background-color: white;
+    opacity: 0.5;
+}
+
+.footer__container {
+    /* background-color: red; */
+    text-align: center;
+    font-weight: bold;
+    margin-top: -80px;
+    height: 90px;
+}
+
+

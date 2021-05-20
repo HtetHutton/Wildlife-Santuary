@@ -1,0 +1,63 @@
+html {
+    font-size: 100%; /* Lets user control zoom. */
+}
+
+/* Font for the entire document unless over-written later. */
+body {
+    margin: 20;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    /* background-image: url(/images/background.jpg); */
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+    background-color: rgb(213, 231, 247);
+}
+
+/* This gets rid of link's underlines.  */
+a, a:visited {
+    text-decoration: none;
+    padding-right: 5px;
+    color: black;
+    /* background-color: transparent; */
+}
+
+a:hover {
+    background-color: lightgray;
+}
+
+/* Display is flex so that the entire header section stays in one block. */
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: darkolivegreen;
+    /* opacity: 0.6; */
+}
+
+.header__links {
+    display: inline-block;
+    margin-left: 700px;   /* Stick it to the right side.*/
+    margin-right: 0px;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    padding-right: 20px;
+}
+
+.resident {
+    list-style-type: none;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.map-container {
+    position: relative;
+    padding-left: 20px;
+}
+
+
+
