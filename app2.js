@@ -53,7 +53,7 @@ function bindButtons(){
         req2.setRequestHeader("Content-Type", "application/json");
         req2.addEventListener("load", function(){
             if(req2.status >= 200 && req2.status < 400){
-                document.getElementById("thank-you-message2").textContent = "Thank you for submitting your infomation.";
+                document.getElementById("thank-you-message2").textContent = "Thank you for submitting your information.";
                 console.log("Request went through okay.");
             }
             else(console.log("crap"));
