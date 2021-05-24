@@ -38,8 +38,11 @@ a:hover {
     align-items: center;
     width: 100%;
     background-color: darkolivegreen;
+    /* margin-bottom: 0px; */
     /* opacity: 0.6; */
-
+}
+.welcome-message {
+    margin-top: 0px;
 }
 
 .header__links {

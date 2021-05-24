@@ -28,57 +28,61 @@
     </header>
 <body>
     <h1>Make a Gift</h1>
+    <div>Image source: <a href="https://www.pexels.com/search/animal/">https://www.pexels.com/search/animal/</a></div>
     <div class="red-panda">
         <img id="red-panda" src="images/red_panda.jpg" style="padding-left: 20px;">
     </div>
     <h2>We appreciate your generosity! (But don't put your actual personal information in this form.)</h2>
     <!-- Donation Form -->
-    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST">
+    <!-- <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST"> -->
+        <!-- Changed to sending POST request using js so I can utilize async and display thank you message when it goes through okay. -->
+        <!-- Note: I had trouble using getElementsByName instead of getElementById. I'll figure this out later. -->
+    <form> 
         <fieldset>
             <legend style="font-weight: bolder;">Fill out your information to donate</legend>
             <p>
             <label>First Name:
-                <input type="text" name="FirstName_input" maxlength="30">
+                <input type="text" id="FirstName_input" maxlength="30">
             </label>
             </p>
             <p>
             <label>Last Name:
-                <input type="text" name="lastName_input" maxlength="30">
+                <input type="text" id="lastName_input" maxlength="30">
             </label>
             </p>
             <p>
             <label>Email Address:
-                <input type="email" name="email" maxlength="30">
+                <input type="email" id="email" maxlength="30">
             </label>
             </p>
             <p>
             <label>Address line 1:
-                <input type="text" name="address1" maxlength="50">
+                <input type="text" id="address1" maxlength="50">
             </label>
             </p>
             <p>
                 <label>Address line 2:
-                    <input type="text" name="address2" maxlength="50">
+                    <input type="text" id="address2" maxlength="50">
                 </label>
             </p>
             <p>
                 <label>City:
-                    <input type="text" name="city" maxlength="50">
+                    <input type="text" id="city" maxlength="50">
                 </label>
             </p>
             <p>
                 <label>State/Province:
-                    <input type="text" name="state" maxlength="50">
+                    <input type="text" id="state" maxlength="50">
                 </label>
             </p>
             <p>
                 <label>Postal Code:
-                    <input type="text" name="postalCode" maxlength="50">
+                    <input type="text" id="postalCode" maxlength="50">
                 </label>
             </p>
             <p>
                 <label>Country:
-                    <input type="text" name="country" maxlength="50">
+                    <input type="text" id="country" maxlength="50">
                 </label>
             </p>
         </fieldset>
@@ -87,56 +91,61 @@
             <legend style="font-weight: bolder;">Payment Information</legend>
             <p>
                 <label>Card Number:
-                    <input type="text" name="credit-card" maxlength="20">
+                    <input type="text" id="credit-card" maxlength="20">
                 </label>
                 <label>CVV:
-                    <input type="text" name="cvv">
+                    <input type="text" id="cvv">
                 </label>
             </p>
             <p>
                 <label>Expiration Date:
-                    <input type="month" name="month">
+                    <input type="month" id="month">
                 </label>
             </p>
             <p>
-                <input type="submit" value="Submit" style="font-size: large;">
+                <input type="submit" id="donateSubmit" value="Submit" style="font-size: large;">
             </p>
+            <p id="thank-you-message"></p>
         </fieldset>
     </form>
     <br>
     <!-- Volunteer Form -->
-    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST">
+    <!-- <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST"> -->
+        <!-- Changed to sending POST request using js so I can utilize async and display thank you message when it goes through okay. -->
+    <form>
         <fieldset>
             <legend style="font-weight: bolder;">Fill out your information to volunteer</legend>
             <p>
                 <label>Name:
-                <input type="text" name="volunteerName">
+                <input type="text" id="volunteerName">
                 </label>
             </p>
             <p>
                 <label>Phone Number:
-                <input type="text" name="phoneNum">
+                <input type="text" id="phoneNum">
                 </label>
             </p>
             <p>
                 <label>Enter your availability start-time:
-                    <input type="datetime-local" name="start-time">
+                    <input type="datetime-local" id="start-time">
                 </label>
             </p>
             <p>
                 <label>Enter your availability end-time:
-                    <input type="datetime-local" name="end-time">
+                    <input type="datetime-local" id="end-time">
                 </label>
             </p>
             <p>
                 <label>Comments:<br>
-                    <textarea type="text" rows="5" cols="30"></textarea>
+                    <textarea type="text" id="comments" rows="5" cols="30"></textarea>
                 </label>
             </p>
             <p>
-                <input type="submit" value="Submit" style="font-size: large;">
+                <input type="submit" id="volSubmit" value="Submit" style="font-size: large;">
             </p>
+            <p id="thank-you-message2"></p>
         </fieldset>
     </form>
+    <script src="app2.js"></script>
 </body>
 </html>
