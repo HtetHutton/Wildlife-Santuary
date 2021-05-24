@@ -24,7 +24,7 @@ function bindButtons(){
         // console.log(dataList);
         console.log(JSON.stringify(dataList)); // For debug.
         var payload = dataList;
-        req1.open("POST", "http://httpbin.org/post", true);   // True makes it asynchronus. 
+        req1.open("POST", "https://httpbin.org/post", true);   // True makes it asynchronus. 
         req1.setRequestHeader("Content-Type", "application/json");
         // Add EventListener to make it asynchronus. 
         req1.addEventListener("load", function(){
@@ -49,7 +49,7 @@ function bindButtons(){
         dataList2.push({"endTime": document.getElementById("end-time").value});
         dataList2.push({"comments": document.getElementById("comments").value});
         var payload2 = dataList2;
-        req2.open("POST", "http://httpbin.org/post", true);
+        req2.open("POST", "https://httpbin.org/post", true);
         req2.setRequestHeader("Content-Type", "application/json");
         req2.addEventListener("load", function(){
             if(req2.status >= 200 && req2.status < 400){
